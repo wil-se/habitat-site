@@ -81,12 +81,15 @@ function Efx() {
   return null
 }
 
+const { innerWidth: width, innerHeight: height } = window;
+
+
 export default function App() {
   return (
     <>
     <div style={{textAlign: "center"}}>
       <div style={{height: "15vw"}}>
-    <img alt="Logo" src={Logo} style={{width:"40%",}}/>
+    <img alt="Logo" src={Logo} style={{width: innerWidth < 900 ? "90%" : "40%"}}/>
     </div>
     <div style={{position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: -1}}>
     <Canvas
