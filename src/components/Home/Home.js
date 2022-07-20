@@ -6,7 +6,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-      <Container className="home-content pt-5">
+      <Container className="home-content pt-3">
           <Row>
           <img alt="logo" src={Logo}/>
           </Row>

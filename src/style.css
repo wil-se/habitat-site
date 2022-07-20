@@ -163,12 +163,16 @@ button:focus {
 }
 
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0.2rem 1rem !important;
 }
 
 @media (max-width: 767px) {
   .nav-link {
-    padding: 0.7rem 1rem !important;
+    padding: 0.4rem 1rem !important;
+  }
+
+  .navbar {
+    padding: 4px !important;
   }
 }
 
