@@ -1,9 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+import { Container, Row } from "react-bootstrap";
 import Logo from "../../Assets/logo.png"
 
 function Home() {
@@ -12,7 +8,7 @@ function Home() {
       <Container fluid className="home-section" id="home">
       <Container className="home-content pt-5">
           <Row>
-          <img src={Logo}/>
+          <img alt="logo" src={Logo}/>
           </Row>
 
           <Row>
@@ -27,7 +23,7 @@ function Home() {
           <br></br>
           <p>La lenticchia!</p>
           <h1>E quello più veloce?</h1>
-          <img src="https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2014/06/16/1402923046-michale.jpg?_=1402923046&format=webp"></img>
+          <img alt="ao" src="https://img.ilgcdn.com/sites/default/files/styles/xl/public/foto/2014/06/16/1402923046-michale.jpg?_=1402923046&format=webp"></img>
           </Row>
           
         </Container>
