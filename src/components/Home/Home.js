@@ -8,7 +8,7 @@ function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Container className="home-content pt-4">
+        <Container className="home-content pt-5">
           <Row style={{marginBottom: 100}}>
             <img alt="logo" src={Logo}/>
           </Row>
