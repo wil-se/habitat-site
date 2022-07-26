@@ -18,7 +18,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container style={{height: window.innerWidth > 600 ? 800 : 360}}>
+      <Container style={{height: window.innerWidth > 600 ? 800 : 360, marginBottom: window.innerWidth > 600 ? 0 : 50}}>
        <MainModel/>
       </Container>
       

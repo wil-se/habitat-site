@@ -8,7 +8,7 @@
   
   .slide-track {
     display: inline-block;
-    animation: move 80s linear infinite;
+    animation: move 30s linear infinite;
     white-space: nowrap;
   }
   
@@ -24,21 +24,16 @@
   }
   
   @keyframes move {
+    100% {
+      transform: translateX(0);
+    }
     0% {
       transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(50%);
     }
   }
   
   .slider::before,
   .slider::after {
-    background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
     content: "";
     height: 100px;
     position: absolute;
