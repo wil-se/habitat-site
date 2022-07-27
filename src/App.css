@@ -32,3 +32,13 @@
     transform: rotate(360deg);
   }
 }
+
+.bullet {
+  height: 300px;
+  background-color: #FBFBFD;
+  margin-top: 10px !important;
+}
+
+.colbutton {
+  background-color: #282c34;
+}
