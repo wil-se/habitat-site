@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import Logo from "../../Assets/logo.png"
 import MainModel from "./MainModel"
 import Slider from "../Slider/Slider";
-import Button from "react-bootstrap/Button";
+
 
 function Home() {
   return (
