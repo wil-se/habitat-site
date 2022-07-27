@@ -1,31 +1,47 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Logo from "../../Assets/logo.png"
 import MainModel from "./MainModel"
 import Slider from "../Slider/Slider";
 
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Container className="home-content pt-5">
-          <Row style={{marginBottom: 100}}>
+    <>
+      
+      
+      
+      <Container>
+          <Row className="pt-5 mb-5">
             <img alt="logo" src={Logo}/>
           </Row>
-          <Row style={{marginBottom: 30}}>
-            <h1 className="text-center">“I believe wherever dreams dwell, the heart calls it home. So may you untangle yourself from the twist of melancholy and let your thoughts carry you back to the birthplace of your truth.”</h1>
-            <h2 className="text-end">-Dodinsky</h2>
-          </Row>
-        </Container>
       </Container>
-      <Container style={{height: window.innerWidth > 600 ? 800 : 360, marginBottom: window.innerWidth > 600 ? 0 : 50}}>
+      
+      <Container className="py-5" style={{
+        backgroundColor: "#FBFBFD",
+        maxWidth: "100%"
+        }}>
+        <Row className="justify-content-center">
+          <Col xs={12} md={8}>
+            <h2 className="text-center">“I believe wherever dreams dwell, the heart calls it home.<br/> So may you untangle yourself from the twist of melancholy and let your thoughts carry you back to the birthplace of your truth.”</h2>
+            <h3 className="text-end">-Dodinsky</h3>
+          </Col>
+        </Row> 
+      </Container>
+
+
+      <Container style={{
+        height: window.innerWidth > 600 ? 800 : 360,
+        marginBottom: window.innerWidth > 600 ? 0 : 50
+        }}>
        <MainModel/>
       </Container>
       
-      <Container>
+      <Container style={{
+        maxWidth: "100%",
+      }}>
         <Slider/>
       </Container>
-    </section>
+    </>
   );
 }
 
