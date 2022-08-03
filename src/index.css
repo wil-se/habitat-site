@@ -20,6 +20,20 @@ body {
   color: var(--black);
 }
 
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--indigo);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 2px solid var(--gold);  /* creates padding around scroll thumb */
+}
+
 .bullet {
   height: 300px;
   background-color: var(--platinum);
