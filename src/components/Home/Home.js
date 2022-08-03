@@ -134,6 +134,12 @@ function Home() {
           </Col>
         </Row>
       </Container>
+
+      <Container className="text-center mb-5">
+        <Button className="px-5 golden-button" href="/whitepaper">
+          <h3>Read the whitepaper</h3>
+        </Button>
+      </Container>
     </>
   );
 }

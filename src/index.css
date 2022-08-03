@@ -301,6 +301,19 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none !important;
 }
 
+.golden-button {
+  background-color: var(--indigo) !important;
+  color: var(--white) !important;
+}
+
+.golden-button:hover {
+  background-color: var(--gold) !important;
+  color: var(--white) !important;
+  box-shadow: 0 0 11px var(--indigo);
+}
+
+
+
 /* --------- */
 /* Resume */
 /* --------- */
