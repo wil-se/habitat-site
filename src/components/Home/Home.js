@@ -16,14 +16,14 @@ function Home() {
       
       <Row className="py-2 mx-0 headline-row justify-content-center">
           <Col xs={12} md={8}>
-            <h1 className="text-center headline"><b>Avverti la necessità ancestrale di scopare una papera</b></h1>
+            <h1 className="text-center headline"><b>If you do not understand the yeld, you are the yield.</b></h1>
           </Col> 
       </Row>
 
       <Row className="py-5 mx-0 mt-5 mb-3 justify-content-center">
           <Col xs={12} md={8}>
-            <h1 className="text-center"><b>Nome della collection</b></h1>
-            <h3 className="text-center">Frase sottotitolo della collection</h3>
+            <h1 className="text-center"><b>Collection's name</b></h1>
+            <h3 className="text-center">Collection's subheading one two three</h3>
           </Col> 
       </Row>
 
@@ -67,45 +67,69 @@ function Home() {
 
       <Container className="mb-5">
         <Row className="justify-content-center">
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>Furnish your metaverse</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
 
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>MetavExpo</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
 
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>Connect with design experts</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
 
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>Digital/Phisycal Twin</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
 
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>Get Rewards</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
 
-          <Col xs={12} md={6} className="px-1">
+          <Col xs={12} md={6} className="px-3 py-2">
             <Card className="bullet card-hover">
             <Card.Header className="text-center"><h4>Charity DAO</h4></Card.Header>
-            <Card.Body className="text-center">Sesso cazzo palle</Card.Body>
+            <Card.Body className="text-center">
+              Magic text sauce
+              <br/>
+              <img alt="nyan" src="https://c.tenor.com/-AyTtMgs2mMAAAAi/nyan-cat-nyan.gif"/>
+              </Card.Body>
             </Card>
           </Col>
         </Row>
