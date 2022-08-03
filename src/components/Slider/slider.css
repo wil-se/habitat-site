@@ -1,9 +1,9 @@
 .slider {
     height: 400px;
-    margin: auto;
+    margin: 0px;
     overflow: hidden;
     position: relative;
-    width: 95%;
+    width: 100%;
   }
   
   .slide-track {
