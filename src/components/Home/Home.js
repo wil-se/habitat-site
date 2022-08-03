@@ -9,7 +9,7 @@ function Home() {
   return (
     <>
       <Container>
-          <Row className="pt-5 mb-5">
+          <Row className="pt-5 my-5">
             <img alt="logo" src={Logo}/>
           </Row>
       </Container>
