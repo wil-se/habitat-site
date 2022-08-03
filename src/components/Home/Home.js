@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import Logo from "../../Assets/logo-purple.png"
 import MainModel from "./MainModel"
 import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
 
 
 function Home() {
@@ -38,7 +39,7 @@ function Home() {
         <Slider/>
       </Container>
         
-      <Container className="mb-5">
+      <Container style={{marginBottom: 130}}>
         <Card className="my-2 mx-2 py-4 card-hover">
           <Row className="align-items-center">
             <Col className="text-center align-text-middle my-4 py-2 divider-mobile" xs={12} md={6}>
@@ -136,9 +137,11 @@ function Home() {
       </Container>
 
       <Container className="text-center mb-5">
-        <Button className="px-5 golden-button" href="/whitepaper">
-          <h3>Read the whitepaper</h3>
-        </Button>
+        <Link to="/whitepaper">
+          <Button className="px-5 golden-button">
+            <h3>Read the whitepaper</h3>
+          </Button>
+        </Link>
       </Container>
     </>
   );
