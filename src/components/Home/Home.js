@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import MainModel from "./MainModel"
 
+// https://pixabay.com/illustrations/vr-virtual-reality-vr-goggles-6770800/
 
 function Home() {
   return (
