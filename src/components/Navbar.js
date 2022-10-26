@@ -26,11 +26,11 @@ function NavBar() {
   return (
     <Navbar
       expanded={expand}
-      fixed="top"
+      sticky="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}
+      className={`d-flex justify-content-center ${navColour ? "sticky" : "navbar"}`}
     >
-      <Container>
+      <Container className='justify-content-center'>
         {/* <Navbar.Brand href="/" className="d-flex">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand> */}
@@ -44,11 +44,11 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+        <Navbar.Collapse className="ms-auto justify-content-center" id="responsive-navbar-nav">
+          <Nav defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link className="text-center" as={Link} to="/" onClick={() => updateExpanded(false)}>
+                Home
               </Nav.Link>
             </Nav.Item>
 
@@ -57,8 +57,31 @@ function NavBar() {
                 as={Link}
                 to="/whitepaper"
                 onClick={() => updateExpanded(false)}
+                className="text-center"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Whitepaper
+                Whitepaper
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/whitepaper"
+                onClick={() => updateExpanded(false)}
+                className="text-center"
+              >
+                Metaverse
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/whitepaper"
+                onClick={() => updateExpanded(false)}
+                className="text-center"
+              >
+                Updates
               </Nav.Link>
             </Nav.Item>
 

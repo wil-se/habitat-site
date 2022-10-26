@@ -10,28 +10,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif !important;
+  font-family: "Candal", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--platinum) !important;
+  background-color: #FFF !important;
   color: var(--black);
+  font-size: 20px !important;
 }
 
 body::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px;
+  /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--black);        /* color of the tracking area */
+  background: var(--black);
+  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--indigo);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 2px solid var(--gold);  /* creates padding around scroll thumb */
+  background-color: var(--indigo);
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 2px solid var(--gold);
+  /* creates padding around scroll thumb */
 }
 
 .bullet {
@@ -81,6 +88,7 @@ body::-webkit-scrollbar-thumb {
 .card {
   border-radius: 1.375rem !important;
   border-color: transparent;
+  border: none !important;
 }
 
 .card-hover:hover {
@@ -98,6 +106,11 @@ body::-webkit-scrollbar-thumb {
   cursor: default;
 }
 
+.card-title {
+  border-bottom: black;
+  border-bottom-style: solid;
+}
+
 /* --------- */
 /* Navbar Section  */
 /* --------- */
@@ -109,7 +122,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-  position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.0rem !important;
@@ -173,10 +185,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.4rem !important;
     background-color: black !important;
   }
+
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
+
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -203,7 +217,6 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
 }
 
 .navbar-nav .nav-item a {
@@ -227,9 +240,9 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease-out 0s;
 }
 
-.navbar-nav .nav-item a:hover::after {
+/* .navbar-nav .nav-item a:hover::after {
   width: 100%;
-}
+} */
 
 /* --------- */
 /* Home section */
@@ -248,8 +261,9 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
+
 .footer-copywright {
   text-align: center !important;
 }
@@ -275,6 +289,7 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
+
 .footer-icons {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
@@ -296,6 +311,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--indigo) !important;
   border-color: black !important;
 }
+
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -351,6 +367,7 @@ body::-webkit-scrollbar-thumb {
     padding-left: 15px !important;
   }
 }
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
