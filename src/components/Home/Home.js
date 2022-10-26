@@ -41,7 +41,7 @@ function Home() {
                 <h2>Visit our collection in the metaverse</h2>
               </Card.Title>
               <Card.Body className='text-center'>
-                <iframe title="" style={{ height: '600px', width: '100%' }} src="https://www.spatial.io/s/habitat-62c8daae0d0b1c00013771cf?share=5608793999292313744" allow="microphone https://spatial.io; camera https://spatial.io"></iframe>
+                <iframe title="spatial" style={{ height: '600px', width: '100%' }} src="https://www.spatial.io/s/habitat-62c8daae0d0b1c00013771cf?share=5608793999292313744" allow="microphone https://spatial.io; camera https://spatial.io"></iframe>
               </Card.Body>
               <Card.Footer className='text-center'>
                 <Button className='m-2'>🚶 Info</Button>
