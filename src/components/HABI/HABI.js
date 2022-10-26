@@ -1,13 +1,19 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 
 function HABI() {
 
   return (
-      <Container fluid className="resume-section pt-4">
-      </Container>
+    <Container fluid className="pt-4">
+      <Row className="d-flex justify-content-center">
+        <Col xs={12} md={12} className="text-center my-5">
+          <h1>🪙</h1>
+          <h1>$HABI</h1>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 
