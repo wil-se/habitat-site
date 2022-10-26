@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className='d-flex justify-content-center'>
-        <img className='d-flex justify-content-center' style={{ width: '50%' }} alt="logo" src={Logo} />
+        <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={Logo} />
       </div>
       <Navbar />
       <ScrollToTop />
