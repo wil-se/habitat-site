@@ -29,7 +29,7 @@ function Home() {
                 <p>At Habitat Studio we want to bring the intimacy of the hearth in the <b>digital world</b>. In order to do that we believe that the first step is bringing the years of experience of <b>skilled designers</b> to the <b>metaverse</b>, as well as helping and promoting the ones that want to craft themselves the items to <b>tailor</b> their own <b>digital homes.</b></p>
               </Card.Body>
               <Card.Footer className='text-center'>
-                <Button className='m-2'>📜 Read Docs</Button>
+                <Button href="/docs" className='m-2'>📜 Read Docs</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -43,7 +43,7 @@ function Home() {
                 {/* <iframe title="spatial" style={{ height: '600px', width: '100%' }} src="https://www.spatial.io/s/habitat-62c8daae0d0b1c00013771cf?share=5608793999292313744" allow="microphone https://spatial.io; camera https://spatial.io"></iframe> */}
               </Card.Body>
               <Card.Footer className='text-center'>
-                <Button className='m-2'>🚶 Info</Button>
+                <Button href="/metaverse" className='m-2'>🏃 Go!</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -61,7 +61,7 @@ function Home() {
               <p>Token address: 0x5b9fF45283eC291a25495953F1E80007bE66F49F</p>
               </Card.Body>
               <Card.Footer className='text-center'>
-                <Button className='m-2'>🚶 Info</Button>
+                <Button href="/habi" className='m-2'>ℹ️ Info</Button>
               </Card.Footer>
             </Card>
           </Col>
@@ -76,7 +76,7 @@ function Home() {
               <p>The MetavExpo aims to connect a wide audience, including influential persons, experts, artists, investors, so that they can communicate internationally, creating and at the same time economic and working opportunities: this would allow participants to share their works, ideas, culture and products to an international audience. In this way, exhibitors will contribute not only to the development of their image, but also and above all to the development of their activities at an international level.</p>
               </Card.Body>
               <Card.Footer className='text-center'>
-                <Button className='m-2'>🚶 Info</Button>
+                <Button href="/metavexpo" className='m-2'>ℹ️ Info</Button>
               </Card.Footer>
             </Card>
           </Col>
