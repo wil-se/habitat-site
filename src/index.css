@@ -133,7 +133,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
-  font-size: 1.0rem !important;
+  font-size: 1.4rem !important;
   background-color: var(--black) !important;
 }
 

@@ -7,7 +7,7 @@ function Home() {
     <>
 
         <Container>
-      <Row className="pt-5 mx-0 mt-5 justify-content-center">
+      <Row className="pt-5 mx-0 mt-3 justify-content-center">
         <Col xs={12} md={8}>
           <h1 className="text-center"><b>Coming soon..</b></h1>
         </Col>
