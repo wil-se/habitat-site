@@ -10,7 +10,7 @@ export default function MainModel(props) {
       <Suspense fallback={null}>
         <Model />
       </Suspense>
-      <OrbitControls autoRotate enableZoom={false} />
+      <OrbitControls autoRotate enableZoom={true} />
     </Canvas>
 
   </>;
