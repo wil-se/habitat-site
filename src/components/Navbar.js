@@ -65,6 +65,17 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
+                Litepaper
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/whitepaper"
+                onClick={() => updateExpanded(false)}
+                className="text-center"
+              >
                 Metaverse
               </Nav.Link>
             </Nav.Item>

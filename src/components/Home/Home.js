@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import MainModel from "./MainModel"
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
         <Container>
       <Row className="pt-5 mx-0 mt-3 justify-content-center">
         <Col xs={12} md={8}>
-          <h1 className="text-center"><b>Coming soon..</b></h1>
+          <h1 className="text-center"><b>Coming 🔜..</b></h1>
         </Col>
         <Col xs={12} style={{ height: window.innerWidth > 600 ? '600px' : 'auto', width: window.innerWidth > 600 ? '70%' : '100%' }} className='d-flex justify-content-center'>
           <MainModel className='d-flex justify-content-center' />
@@ -25,6 +25,10 @@ function Home() {
             <Card.Body className='text-center'>
               <p>At Habitat Studio we want to bring the intimacy of the hearth in the digital world. In order to do that we believe that the first step is bringing the years of experience of skilled designers to the metaverse, as well as helping and promoting the ones that want to craft themselves the items to tailor their own digital homes.</p>
             </Card.Body>
+            <Card.Footer className='text-center'>
+              <Button className='m-2'>📜 Whitepaper</Button>
+              <Button className='m-2'>📑 Litepaper</Button>
+            </Card.Footer>
           </Card>
         </Col>
       </Row>
