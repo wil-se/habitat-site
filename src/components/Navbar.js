@@ -76,6 +76,17 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
+                Roadmap
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/whitepaper"
+                onClick={() => updateExpanded(false)}
+                className="text-center"
+              >
                 Metaverse
               </Nav.Link>
             </Nav.Item>
@@ -87,7 +98,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                Updates
+                DAO
               </Nav.Link>
             </Nav.Item>
 
