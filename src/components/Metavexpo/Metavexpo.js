@@ -18,7 +18,7 @@ function Metavexpo() {
               <h3>Come and see</h3>
             </Card.Title>
             <Card.Body className="d-flex justify-content-center">
-              <iframe style={{ height: '600px', width: '1000px' }} src="https://www.spatial.io/s/habitat-62c8daae0d0b1c00013771cf?share=5608793999292313744" allow="microphone https://spatial.io; camera https://spatial.io"></iframe>
+              <iframe title="spatial" style={{ height: '600px', width: '1000px' }} src="https://www.spatial.io/s/habitat-62c8daae0d0b1c00013771cf?share=5608793999292313744" allow="microphone https://spatial.io; camera https://spatial.io"></iframe>
             </Card.Body>
           </Card>
         </Col>

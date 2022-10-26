@@ -51,6 +51,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 900 !important;
 }
 
+.h3, h3 {
+  font-weight: 900 !important;
+}
+
+
 
 .bullet {
   height: 300px;
