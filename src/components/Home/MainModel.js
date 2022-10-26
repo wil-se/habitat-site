@@ -1,10 +1,9 @@
 import { Canvas } from "react-three-fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 import { Suspense } from 'react'
 import { Model } from "./Poltrona";
 
 export default function MainModel(props) {
-  const { scene } = useGLTF("/armandone_nazionale.glb");
   return <>
 
     <Canvas camera={{ position: [0, 0, 400], fov: 25 }}>
