@@ -65,17 +65,6 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                Litepaper
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/whitepaper"
-                onClick={() => updateExpanded(false)}
-                className="text-center"
-              >
                 Roadmap
               </Nav.Link>
             </Nav.Item>
@@ -87,7 +76,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                Metaverse
+                MetavEXPO
               </Nav.Link>
             </Nav.Item>
 
@@ -98,7 +87,7 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                DAO
+                DAO / $HABI
               </Nav.Link>
             </Nav.Item>
 

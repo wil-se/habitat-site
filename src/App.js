@@ -16,7 +16,7 @@ import Logo from "./Assets/logo-purple.png"
 function App() {
   return (
     <Router>
-      <div style={{height: 10, backgroundColor: 'black'}}></div>
+      <div style={{ height: 10, backgroundColor: 'black' }}></div>
       <div className='d-flex justify-content-center'>
         <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={Logo} />
       </div>
