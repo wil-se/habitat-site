@@ -13,7 +13,7 @@ function Home() {
           <Col xs={12} md={8} className="my-5">
             <h1 className="text-center"><b>Coming 🔜 ..</b></h1>
           </Col>
-          <Col xs={12} style={{ height: window.innerWidth > 600 ? '600px' : 'auto', width: window.innerWidth > 600 ? '70%' : '100%' }} className='d-flex justify-content-center'>
+          <Col xs={12} style={{ height: window.innerWidth > 600 ? '600px' : '300px', width: window.innerWidth > 600 ? '70%' : '100%' }} className='d-flex justify-content-center'>
             <MainModel className='d-flex justify-content-center' />
           </Col>
           {/* <Col xs={12} >
