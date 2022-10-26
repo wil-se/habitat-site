@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import pdf from "../../Assets/../Assets/template.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -8,7 +8,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
-function Whitepaper() {
+function Docs() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -17,8 +17,12 @@ function Whitepaper() {
 
   return (
     <div>
-      <Container fluid className="resume-section pt-4">
-        <Row>
+      <Container fluid className="pt-4">
+        <Row className="d-flex justify-content-center">
+          <Col xs={12} md={10} className="text-center my-5">
+              <h1>📜</h1>
+              <h1>Docs</h1>
+          </Col>
           <Col xs={12} md={6} className="text-center mb-4">
             <Button
               variant="primary"
@@ -57,4 +61,4 @@ function Whitepaper() {
   );
 }
 
-export default Whitepaper;
+export default Docs;

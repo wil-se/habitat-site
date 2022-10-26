@@ -1,7 +1,12 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer";
-import Whitepaper from "./components/Whitepaper/Whitepaper";
+import Docs from "./components/Docs/Docs";
+import DAO from "./components/DAO/DAO";
+import HABI from "./components/HABI/HABI";
+import Metavexpo from "./components/Metavexpo/Metavexpo";
+import Roadmap from "./components/Roadmap/Roadmap";
+
 import {
   BrowserRouter as Router,
   Route,
@@ -24,8 +29,12 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/whitepaper" element={<Whitepaper />} />
+        <Route path="/docs" element={<Docs />} />
         <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/dao" element={<DAO/>} />
+        <Route path="/habi" element={<HABI/>} />
+        <Route path="/metavexpo" element={<Metavexpo/>} />
+        <Route path="/roadmap" element={<Roadmap/>} />
       </Routes>
       <Footer />
     </Router>

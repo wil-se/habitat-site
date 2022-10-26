@@ -10,11 +10,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Candal&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;700;900&display=swap');
 
 body {
   margin: 0;
-  font-family: "Candal", sans-serif !important;
+  font-family: "Martel Sans", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #FFF !important;
@@ -43,10 +43,12 @@ body::-webkit-scrollbar-thumb {
 
 .h1, h1 {
   font-size: calc(1.375rem + 2.2vw) !important;
+  font-weight: 900 !important;
 }
 
 .h2, h2 {
   font-size: calc(1.375rem + 1.5vw) !important;
+  font-weight: 900 !important;
 }
 
 
@@ -136,7 +138,7 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
+  padding: 0.4rem 2rem 0rem 2rem !important;
   font-size: 1.4rem !important;
   background-color: var(--black) !important;
 }
@@ -215,7 +217,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-link {
-  padding: 0.2rem 1rem !important;
+  padding: 0.4rem 1rem !important;
+  font-weight: 700 !important;
 }
 
 @media (max-width: 767px) {
@@ -233,7 +236,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar-nav .nav-item a {
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease-out 0s;
   position: relative;
   z-index: 1;
@@ -241,14 +244,12 @@ body::-webkit-scrollbar-thumb {
 
 .navbar-nav .nav-item a::after {
   content: "";
-  position: relative;
   display: block;
   height: 5px;
   width: 0;
   border-radius: 16px;
   background: white;
   bottom: 1px;
-  left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
 }

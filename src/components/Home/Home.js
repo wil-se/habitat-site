@@ -10,7 +10,7 @@ function Home() {
 
       <Container>
         <Row className="pt-5 mx-0 mt-3 justify-content-center">
-          <Col xs={12} md={8}>
+          <Col xs={12} md={8} className="my-5">
             <h1 className="text-center"><b>Coming 🔜 ..</b></h1>
           </Col>
           <Col xs={12} style={{ height: window.innerWidth > 600 ? '600px' : 'auto', width: window.innerWidth > 600 ? '70%' : '100%' }} className='d-flex justify-content-center'>
@@ -29,7 +29,7 @@ function Home() {
                 <p>At Habitat Studio we want to bring the intimacy of the hearth in the digital world. In order to do that we believe that the first step is bringing the years of experience of skilled designers to the metaverse, as well as helping and promoting the ones that want to craft themselves the items to tailor their own digital homes.</p>
               </Card.Body>
               <Card.Footer className='text-center'>
-                <Button className='m-2'>📜 Whitepaper</Button>
+                <Button className='m-2'>📜 Read Docs</Button>
               </Card.Footer>
             </Card>
           </Col>

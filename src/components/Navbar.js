@@ -50,18 +50,18 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/whitepaper"
+                to="/docs"
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                Whitepaper
+                Docs
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/whitepaper"
+                to="/roadmap"
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
@@ -72,7 +72,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/whitepaper"
+                to="/metavexpo"
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
@@ -83,11 +83,22 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/whitepaper"
+                to="/dao"
                 onClick={() => updateExpanded(false)}
                 className="text-center"
               >
-                DAO / $HABI
+                DAO
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/habi"
+                onClick={() => updateExpanded(false)}
+                className="text-center"
+              >
+                $HABI
               </Nav.Link>
             </Nav.Item>
 
