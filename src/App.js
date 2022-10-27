@@ -6,7 +6,7 @@ import DAO from "./components/DAO/DAO";
 import HABI from "./components/HABI/HABI";
 import Metavexpo from "./components/Metavexpo/Metavexpo";
 import Roadmap from "./components/Roadmap/Roadmap";
-
+import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,28 +16,35 @@ import {
 import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./Assets/logo-purple.png"
+import LogoWhite from "./Assets/logo-purple-white.png"
+
+import { useState } from "react";
 
 
 function App() {
+  const [dark, setDark] = useState(true);
+
   return (
-    <Router>
-      <div style={{ height: 10, backgroundColor: 'black' }}></div>
-      <div className='d-flex justify-content-center'>
-        <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={Logo} />
-      </div>
-      <Navbar />
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/docs" element={<Docs />} />
-        <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/dao" element={<DAO/>} />
-        <Route path="/habi" element={<HABI/>} />
-        <Route path="/metavexpo" element={<Metavexpo/>} />
-        <Route path="/roadmap" element={<Roadmap/>} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className={`${dark ? 'dark' : ''}`}>
+      <Router>
+        <div style={{ height: 10, backgroundColor: 'black' }}></div>
+        <div className='d-flex justify-content-center'>
+          <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={dark?LogoWhite:Logo} />
+        </div>
+        <Navbar dark={dark} setDark={setDark} />
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Home dark={dark} />} />
+          <Route path="/docs" element={<Docs dark={dark} />} />
+          <Route path="*" element={<Navigate dark={dark} to="/" />} />
+          <Route path="/dao" element={<DAO dark={dark} />} />
+          <Route path="/habi" element={<HABI dark={dark} />} />
+          <Route path="/metavexpo" element={<Metavexpo dark={dark} />} />
+          <Route path="/roadmap" element={<Roadmap dark={dark} />} />
+        </Routes>
+        <Footer dark={dark}/>
+      </Router>
+    </div >
   );
 }
 

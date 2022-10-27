@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from "react-bootstrap";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 
 
-function HABI() {
+function HABI(props) {
 
   return (
     <Container fluid className="pt-4">
@@ -13,8 +13,8 @@ function HABI() {
           <h1>$HABI</h1>
         </Col>
         <Col xs={12} lg={7} className="d-flex justify-content-center my-5">
-          <Card>
-            <Card.Title className="text-center">
+          <Card className={`${props.dark ? 'dark' : ''}`}>
+            <Card.Title className={`text-center ${props.dark ? 'dark-title' : ''}`}>
               <h3>What is HABI?</h3>
             </Card.Title>
             <Card.Body className="d-flex justify-content-center">

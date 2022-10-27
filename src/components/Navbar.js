@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar(props) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -16,6 +16,15 @@ function NavBar() {
     }
   }
 
+  const toggleTheme = () => {
+    props.setDark(!props.dark);
+    if (props.dark) {
+      document.documentElement.classList.add('dark-theme');
+    } else {
+      document.documentElement.classList.remove('dark-theme')
+    }
+  };
+ 
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -23,7 +32,7 @@ function NavBar() {
       expanded={expand}
       sticky="top"
       expand="md"
-      className={`d-flex justify-content-center ${navColour ? "sticky" : "navbar"}`}
+      className={`d-flex justify-content-center ${navColour ? "sticky" : "navbar"} ${props.dark ? 'dark' : ''}`}
     >
       <Container className='justify-content-center'>
         {/* <Navbar.Brand href="/" className="d-flex">
@@ -99,6 +108,16 @@ function NavBar() {
                 className="text-center"
               >
                 $HABI
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                onClick={() => {updateExpanded(false); toggleTheme();}}
+                className="text-center"
+              >
+                {props.dark ? '☀️' : '🌙' }
               </Nav.Link>
             </Nav.Item>
 

@@ -7,12 +7,10 @@ import { useGLTF } from '@react-three/drei'
 
 export function Model(props) {
   const { nodes, materials } = useGLTF('/sanitized.glb')
-  console.log(nodes);
-  console.log(materials);
   materials.Materiale.wireframe = true;
-  materials.Materiale.color.r = 0;
-  materials.Materiale.color.g = 0;
-  materials.Materiale.color.b = 0;
+  materials.Materiale.color.r = props.dark ? 1 : 0;
+  materials.Materiale.color.g = props.dark ? 1 : 0;
+  materials.Materiale.color.b = props.dark ? 1 : 0;
   
   return (
     <group {...props} dispose={null}>

@@ -5,11 +5,11 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 
-function Footer() {
+function Footer(props) {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
+    <Container fluid className={`footer ${props.dark ? 'dark' : ''}`}>
       <Row>
         <Col md="4" className="footer-copywright">
           <h3>Habitat Studio - Furnish your dreams</h3>

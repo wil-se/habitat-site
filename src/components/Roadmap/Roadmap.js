@@ -5,7 +5,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
-function Roadmap() {
+function Roadmap(props) {
 
   return (
     <Container fluid className="pt-4">
@@ -15,8 +15,8 @@ function Roadmap() {
           <h1>Roadmap</h1>
         </Col>
         <Col xs={12} lg={7} className="d-flex justify-content-center my-5">
-          <Card>
-            <Card.Title className="text-center">
+          <Card className={`${props.dark ? 'dark' : ''}`}>
+            <Card.Title className={`text-center ${props.dark ? 'dark-title' : ''}`}>
               <h3>Marketing & Partnerships</h3>
             </Card.Title>
             <Card.Body className="d-flex justify-content-center">
@@ -25,8 +25,8 @@ function Roadmap() {
           </Card>
         </Col>
         <Col xs={12} lg={7} className="d-flex justify-content-center mb-5">
-          <Card>
-            <Card.Title className="text-center">
+          <Card className={`${props.dark ? 'dark' : ''}`}>
+            <Card.Title className={`text-center ${props.dark ? 'dark-title' : ''}`}>
               <h3>Mint the first collection</h3>
             </Card.Title>
             <Card.Body className="d-flex justify-content-center">
@@ -35,8 +35,8 @@ function Roadmap() {
           </Card>
         </Col>
         <Col xs={12} lg={7} className="d-flex justify-content-center mb-5">
-          <Card>
-            <Card.Title className="text-center">
+          <Card className={`${props.dark ? 'dark' : ''}`}>
+            <Card.Title className={`text-center ${props.dark ? 'dark-title' : ''}`}>
               <h3>Airdrop</h3>
             </Card.Title>
             <Card.Body className="d-flex justify-content-center">

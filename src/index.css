@@ -7,6 +7,20 @@
   --white: #FBFAF8;
 }
 
+.dark {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dark-title {
+  border-bottom-color: white !important;
+}
+
+.dark-navbar {
+  background-color: white;
+  color: black
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -128,14 +142,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card-footer {
-  background-color: #FFF !important;
+  background-color: #FFF;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: var(--black) !important;
+  background-color: var(--black);
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -145,7 +159,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.4rem 2rem 0rem 2rem !important;
   font-size: 1.4rem !important;
-  background-color: var(--black) !important;
+  background-color: var(--black);
 }
 
 .navbar-toggler {
@@ -203,7 +217,7 @@ body::-webkit-scrollbar-thumb {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: black !important;
+    background-color: black;
   }
 
   .navbar-nav .nav-item a::after {

@@ -39,7 +39,7 @@ function Docs() {
               <Page pageNumber={1} scale={width > 786 ? 1 : 0.6} />
             </Document>
           </Col>
-          <Col xs={12} md={6} className="text-center">
+          <Col xs={12} md={6} className="text-center mb-5">
             <Button
               variant="primary"
               href={pdf}
