@@ -19,6 +19,7 @@ function NavBar(props) {
   const toggleTheme = () => {
     localStorage.setItem("dark", !props.dark ? "true" : "false");
     props.setDark(!props.dark);
+    localStorage.setItem("switched", "true");
   };
 
   window.addEventListener("scroll", scrollHandler);

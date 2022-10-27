@@ -17,21 +17,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./Assets/logo-purple.png"
 import LogoWhite from "./Assets/logo-purple-white.png"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function App() {
-  console.log(localStorage.getItem("dark") === 'true');
   const [dark, setDark] = useState(localStorage.getItem("dark") === 'true');
-  console.log(dark);
+  const [switched, setSwitched] = useState(false)
+
+  useEffect(() => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("switched" !== 'true')) {
+      setDark(true);
+    } else if (localStorage.getItem("switched" !== 'true')) {
+      setDark(false);
+    }
+  }, []);
+
   return (
     <div className={`${dark ? 'dark' : ''}`}>
       <Router>
         <div style={{ height: 10, backgroundColor: 'black' }}></div>
         <div className='d-flex justify-content-center'>
-          <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={dark?LogoWhite:Logo} />
+          <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={dark ? LogoWhite : Logo} />
         </div>
-        <Navbar dark={dark} setDark={setDark} />
+        <Navbar dark={dark} setDark={setDark} setSwitched={setSwitched}/>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home dark={dark} />} />
@@ -42,7 +50,7 @@ function App() {
           <Route path="/metavexpo" element={<Metavexpo dark={dark} />} />
           <Route path="/roadmap" element={<Roadmap dark={dark} />} />
         </Routes>
-        <Footer dark={dark}/>
+        <Footer dark={dark} />
       </Router>
     </div >
   );
