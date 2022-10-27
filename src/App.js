@@ -21,8 +21,9 @@ import { useState } from "react";
 
 
 function App() {
-  const [dark, setDark] = useState(true);
-
+  console.log(localStorage.getItem("dark") === 'true');
+  const [dark, setDark] = useState(localStorage.getItem("dark") === 'true');
+  console.log(dark);
   return (
     <div className={`${dark ? 'dark' : ''}`}>
       <Router>

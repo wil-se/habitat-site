@@ -17,14 +17,10 @@ function NavBar(props) {
   }
 
   const toggleTheme = () => {
+    localStorage.setItem("dark", !props.dark ? "true" : "false");
     props.setDark(!props.dark);
-    if (props.dark) {
-      document.documentElement.classList.add('dark-theme');
-    } else {
-      document.documentElement.classList.remove('dark-theme')
-    }
   };
- 
+
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -114,10 +110,10 @@ function NavBar(props) {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                onClick={() => {updateExpanded(false); toggleTheme();}}
+                onClick={() => { updateExpanded(false); toggleTheme(); }}
                 className="text-center"
               >
-                {props.dark ? '☀️' : '🌙' }
+                {props.dark ? '☀️' : '🌙'}
               </Nav.Link>
             </Nav.Item>
 
