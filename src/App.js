@@ -22,7 +22,6 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [dark, setDark] = useState(localStorage.getItem("dark") === 'true');
-  const [switched, setSwitched] = useState(false)
 
   useEffect(() => {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem("switched" !== 'true')) {
@@ -39,7 +38,7 @@ function App() {
         <div className='d-flex justify-content-center'>
           <img className='d-flex justify-content-center' style={{ width: window.innerWidth > 600 ? '50%' : '100%' }} alt="logo" src={dark ? LogoWhite : Logo} />
         </div>
-        <Navbar dark={dark} setDark={setDark} setSwitched={setSwitched}/>
+        <Navbar dark={dark} setDark={setDark}/>
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home dark={dark} />} />
