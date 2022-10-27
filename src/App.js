@@ -6,7 +6,6 @@ import DAO from "./components/DAO/DAO";
 import HABI from "./components/HABI/HABI";
 import Metavexpo from "./components/Metavexpo/Metavexpo";
 import Roadmap from "./components/Roadmap/Roadmap";
-import { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Route,
